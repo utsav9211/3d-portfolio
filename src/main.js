@@ -2,6 +2,8 @@
    main.js — Entry point for the 3D Galaxy Portfolio
    ============================================================ */
 import './style.css';
+
+const INTRO_KEY = 'utsav_portfolio_intro_shown';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
@@ -332,4 +334,5 @@ window.addEventListener('resize', () => {
 
 /* ──────── Boot ──────── */
 animate();
+
 runIntro();
