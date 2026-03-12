@@ -103,6 +103,26 @@ export const SECTORS = {
         <li>Gained experience with Multi-threading and Concurrency concepts to improve application performance and responsiveness.</li>
         <li>Implemented robust error handling using Exception Handling (Checked and Unchecked Exceptions) to ensure program stability and reliability.</li>
       </ul>
+
+      <div class="panel-divider"></div>
+
+      <h3>Certificate of Completion: Claude 101</h3>
+      <p><strong>Anthropic</strong></p>
+      <p style="color:#45A29E">Issued Mar 2026 &bull; Credential ID yooxfte72224</p>
+      <ul>
+        <li>Completed foundational training on Claude AI, including prompt engineering and responsible AI use.</li>
+        <li>Gained hands-on experience with Claude's capabilities for text generation and analysis.</li>
+      </ul>
+
+      <div class="panel-divider"></div>
+
+      <h3>Certificate of Completion: AI Fluency Framework & Foundations</h3>
+      <p><strong>Anthropic</strong></p>
+      <p style="color:#45A29E">Issued Mar 2026 &bull; Credential ID vynz49yygdaq</p>
+      <ul>
+        <li>Learned the core concepts of AI fluency, including frameworks for evaluating and deploying AI solutions.</li>
+        <li>Studied ethical considerations and best practices for integrating AI into business workflows.</li>
+      </ul>
     `,
   },
 
