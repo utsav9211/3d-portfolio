@@ -106,6 +106,35 @@ export const SECTORS = {
 
       <div class="panel-divider"></div>
 
+      <h3>Introduction to agent skills</h3>
+      <p><strong>Anthropic</strong></p>
+      <ul>
+        <li>Certificate of Completion</li>
+        <li>Completed foundational training on agent skills and their application in modern AI workflows.</li>
+      </ul>
+
+      <div class="panel-divider"></div>
+
+      <h3>Claude Code in Action</h3>
+      <p><strong>Anthropic</strong></p>
+      <p style="color:#45A29E">Issued: March 12, 2026 &bull; Certificate No: 3ixa5phspiv6</p>
+      <ul>
+        <li>Certificate of Completion</li>
+        <li>Hands-on experience with Claude’s code generation and automation features.</li>
+        <li><a href="https://verify.skilljar.com/c/3ixa5phspiv6" target="_blank" style="color:#66FCF1">View Certificate</a></li>
+      </ul>
+
+      <div class="panel-divider"></div>
+
+      <h3>AI Fluency for students</h3>
+      <p><strong>Anthropic</strong></p>
+      <ul>
+        <li>Certificate of Completion</li>
+        <li>Developed a strong foundation in AI fluency, including ethical and practical aspects for students.</li>
+      </ul>
+
+      <div class="panel-divider"></div>
+
       <h3>Certificate of Completion: Claude 101</h3>
       <p><strong>Anthropic</strong></p>
       <p style="color:#45A29E">Issued Mar 2026 &bull; Credential ID yooxfte72224</p>
