@@ -68,11 +68,13 @@ export const SECTORS = {
 
       <div class="panel-divider"></div>
 
-      <h3>Node 2 — Full-Stack Git Data Visualizer</h3>
-      <p style="color:#45A29E">Aug 2024 – Sep 2024</p>
+      <h3>Node 2 — AI Resume Shortlisting</h3>
+      <p style="color:#45A29E">2024</p>
       <ul>
-        <li>Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems.</li>
-        <li>Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data.</li>
+        <li>Built an AI-powered resume screening system using Flask, Streamlit, and Scikit-learn to automatically shortlist candidates based on job descriptions.</li>
+        <li>Implemented resume parsing from PDF (pdfminer.six) and DOCX (python-docx) formats with NLP-based text extraction using NLTK and spaCy.</li>
+        <li>Used Sentence-Transformers for semantic similarity scoring between resumes and job descriptions for intelligent candidate ranking.</li>
+        <li>Leveraged pandas for data processing, joblib for model serialization, and pytest for test-driven development.</li>
       </ul>
     `,
   },
