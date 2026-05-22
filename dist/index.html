@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/assets/index-BS1CE7Wi.js"></script>
+  <script type="module" crossorigin src="/assets/index-_vO1CYdh.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-N_kEn1mV.css">
 </head>
 <body>
@@ -41,6 +41,12 @@
       <a href="https://github.com/" target="_blank" rel="noopener noreferrer" title="GitHub">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
       </a>
+      <a href="/Utsav_s_Resume-4.pdf" target="_blank" download="Utsav_Kumar_Resume.pdf" title="Download Resume" style="display:inline-block;margin-left:12px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+      </a>
+      <a href="/Utsav_s_Resume-4.pdf" target="_blank" title="View Resume" style="display:inline-block;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="8"/></svg>
+      </a>
     </div>
 
     <!-- Quick-Nav Radar -->
@@ -51,7 +57,12 @@
       <button class="nav-btn" data-sector="certifications"><span class="nav-dot"></span> Certifications</button>
       <button class="nav-btn" data-sector="skills"><span class="nav-dot"></span> Skills</button>
       <button class="nav-btn" id="btn-home" data-sector="home"><span class="nav-dot"></span> Home</button>
+      <a class="nav-btn" id="btn-resume" href="/Utsav_s_Resume-4.pdf" target="_blank" style="margin-top:18px;background:rgba(102,252,241,.10);border:1.5px solid #66FCF1;color:#66FCF1;font-weight:600;text-decoration:none;display:flex;align-items:center;justify-content:center;">
+        <span class="nav-dot"></span> Resume
+      </a>
     </nav>
+
+
 
     <!-- Info Panel (Glassmorphism) -->
     <div id="info-panel" style="display:none;">
@@ -64,5 +75,62 @@
   <!-- Three.js Canvas -->
   <canvas id="galaxy-canvas"></canvas>
 
+
+  <script>
+    // Hide the default cursor
+    document.body.style.cursor = 'none';
+
+    // 3D CHARACTER CURSOR FOLLOWER
+    const cursorCharacter = document.createElement('div');
+    cursorCharacter.id = 'cursor-animal';
+    cursorCharacter.style.position = 'fixed';
+    cursorCharacter.style.left = '0';
+    cursorCharacter.style.top = '0';
+    cursorCharacter.style.pointerEvents = 'none';
+    cursorCharacter.style.zIndex = '9999';
+    cursorCharacter.innerHTML = '<img src="/3d-cursor.png" alt="3D Cursor Character" style="width: 60px; height: 60px; object-fit: contain; filter: drop-shadow(0 0 12px #64ffda); transition: transform 0.12s; transform-origin: center;">';
+    document.body.appendChild(cursorCharacter);
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let charX = mouseX;
+    let charY = mouseY;
+
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateCursorCharacter() {
+      // Hide on mobile
+      if (window.innerWidth <= 1024) {
+        cursorCharacter.style.display = 'none';
+        requestAnimationFrame(animateCursorCharacter);
+        return;
+      } else {
+        cursorCharacter.style.display = 'block';
+      }
+
+      // Target position (with scroll offset)
+      let targetX = mouseX;
+      let targetY = mouseY + window.scrollY;
+
+      // Easing for trailing effect
+      let dx = targetX - charX;
+      let dy = targetY - charY;
+      charX += dx * 0.08;
+      charY += dy * 0.08;
+
+      // 3D tilt and flip
+      let rotateX = Math.max(Math.min(dy * 0.12, 18), -18); // Clamp for realism
+      let scaleX = dx < 0 ? -1 : 1;
+      let rotateZ = dx * 0.04;
+
+      cursorCharacter.style.transform = `translate3d(${charX + 20}px, ${charY + 20}px, 0) scaleX(${scaleX}) rotateX(${rotateX}deg) rotateZ(${rotateZ}deg)`;
+
+      requestAnimationFrame(animateCursorCharacter);
+    }
+    animateCursorCharacter();
+  </script>
 </body>
 </html>

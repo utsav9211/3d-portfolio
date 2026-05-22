@@ -4230,11 +4230,13 @@ void main() {
 
       <div class="panel-divider"></div>
 
-      <h3>Node 2 — Full-Stack Git Data Visualizer</h3>
-      <p style="color:#45A29E">Aug 2024 – Sep 2024</p>
+      <h3>Node 2 — AI Resume Shortlisting</h3>
+      <p style="color:#45A29E">2024</p>
       <ul>
-        <li>Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems.</li>
-        <li>Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data.</li>
+        <li>Built an AI-powered resume screening system using Flask, Streamlit, and Scikit-learn to automatically shortlist candidates based on job descriptions.</li>
+        <li>Implemented resume parsing from PDF (pdfminer.six) and DOCX (python-docx) formats with NLP-based text extraction using NLTK and spaCy.</li>
+        <li>Used Sentence-Transformers for semantic similarity scoring between resumes and job descriptions for intelligent candidate ranking.</li>
+        <li>Leveraged pandas for data processing, joblib for model serialization, and pytest for test-driven development.</li>
       </ul>
     `},certifications:{title:"THE CERTIFICATION HUB",position:{x:-20,y:-12,z:-40},cameraOffset:{x:-12,y:-8,z:-28},html:`
       <h2>📜 THE CERTIFICATION HUB</h2>
@@ -4255,6 +4257,55 @@ void main() {
       <ul>
         <li>Gained experience with Multi-threading and Concurrency concepts to improve application performance and responsiveness.</li>
         <li>Implemented robust error handling using Exception Handling (Checked and Unchecked Exceptions) to ensure program stability and reliability.</li>
+      </ul>
+
+      <div class="panel-divider"></div>
+
+      <h3>Introduction to agent skills</h3>
+      <p><strong>Anthropic</strong></p>
+      <ul>
+        <li>Certificate of Completion</li>
+        <li>Completed foundational training on agent skills and their application in modern AI workflows.</li>
+      </ul>
+
+      <div class="panel-divider"></div>
+
+      <h3>Claude Code in Action</h3>
+      <p><strong>Anthropic</strong></p>
+      <p style="color:#45A29E">Issued: March 12, 2026 &bull; Certificate No: 3ixa5phspiv6</p>
+      <ul>
+        <li>Certificate of Completion</li>
+        <li>Hands-on experience with Claude’s code generation and automation features.</li>
+        <li><a href="https://verify.skilljar.com/c/3ixa5phspiv6" target="_blank" style="color:#66FCF1">View Certificate</a></li>
+      </ul>
+
+      <div class="panel-divider"></div>
+
+      <h3>AI Fluency for students</h3>
+      <p><strong>Anthropic</strong></p>
+      <ul>
+        <li>Certificate of Completion</li>
+        <li>Developed a strong foundation in AI fluency, including ethical and practical aspects for students.</li>
+      </ul>
+
+      <div class="panel-divider"></div>
+
+      <h3>Certificate of Completion: Claude 101</h3>
+      <p><strong>Anthropic</strong></p>
+      <p style="color:#45A29E">Issued Mar 2026 &bull; Credential ID yooxfte72224</p>
+      <ul>
+        <li>Completed foundational training on Claude AI, including prompt engineering and responsible AI use.</li>
+        <li>Gained hands-on experience with Claude's capabilities for text generation and analysis.</li>
+      </ul>
+
+      <div class="panel-divider"></div>
+
+      <h3>Certificate of Completion: AI Fluency Framework & Foundations</h3>
+      <p><strong>Anthropic</strong></p>
+      <p style="color:#45A29E">Issued Mar 2026 &bull; Credential ID vynz49yygdaq</p>
+      <ul>
+        <li>Learned the core concepts of AI fluency, including frameworks for evaluating and deploying AI solutions.</li>
+        <li>Studied ethical considerations and best practices for integrating AI into business workflows.</li>
       </ul>
     `},skills:{title:"THE TECHNOLOGY GRID",position:{x:30,y:-5,z:-45},cameraOffset:{x:22,y:-2,z:-32},html:`
       <h2>🛠️ THE TECHNOLOGY GRID — Skills</h2>
